@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint content="width=device-width, initail-scale="1.0">
+    <title>Dating Site Signup</title>
+    <style> 
+        body
+        {
+            font-family: 'comic sans MS' cursive, sans-serif;
+            background-color: #ffe6f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1
+        {
+            text-align: center;
+            color: #ff69b4;
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+        form
+        {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.5);
+        }
+        .form-group
+        {
+            margin-bottom: 20px;
+        }
+        label
+        {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ff69b4;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius:10px;
+            border:2px solid #ff69b4;
+            background-color: #ffecf2;
+            font-size: 1rem;
+            color: #333;
+            box-sizing:border-box
+      }
+      input[ type="file"]
+      {
+        border: 2px solid #ff69b4;
+        background-color: #ffecf2;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 1rem;
+        color: #333;
+        cursor: pointer;
+      }
+      input [type="radio"],
+      input [type="checkbox"]
+    {
+        margin-right: 10px;
+    }
+    .form-group.inline
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-group.inline label
+    {
+       flex: 1;
+       margin-right: 10px;
+
+    }
+    .form-group.inline label:last-child
+    {
+        margin-right: 0;
+    }
+    button[type="submit"]
+    {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover 
+    {
+        background-color:#0056b3;
+    }
+     .lost-interest
+     {
+        background-color: #dc3545;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+     }
+     .lost-interest:hover
+     {
+        background-color: #c82333;
+     }
+     .footer-text
+     {
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+        font-size: 1rem;
+     }
+    </style>
+</head>
+<body>
+    <h1>Find Your Perfect Match</h1>
+    <form action="#" method="post" enctype=" multipart/form-data">
+        <!-- Full Name Field -->
+         <div class="form-group">
+            <label for="name"> Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+
+         </div>
+         <!--Email Field-->
+         <div class="form-group">
+            <label for="email"> Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+         </div>
+         <!-- Password Field-->
+          <div class="form-group">
+            <label for="password"> Create Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a secure password"required>
+          </div>
+          <!--Gender-->
+          <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="prefer not to say">Prefer not to say</option>
+        </select>
+          </div>
+          <!--Age-->
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age required">
+          </div>
+          <!--Intrested In-->
+          <div class=" form-group">
+            <label for="intrested-in">Intrested In</label>
+            <select id="intrested-in" name="intrested-in" required>
+            <option value=""disabled selected> Select Preference</option>
+            <option value="male">Males</option>
+            <option value="female">Females</option>
+            <option value="both">Both</option>
+            </select>
+          </div>
+
+          <!--Relationship status-->
+          <div class="form-group">
+            <label for="relationship-status">Relationship Status</label>
+            <select id="relationship-status" name="relationship-status" required>
+                <option value=""disabled selected> Select your status</option>
+                <option value="singel">Single</option>
+                <option value="in=relationship">In a relationship</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>      
+            </select>
+          </div>
+
+          <!--Intrest-->
+          <div class="form-group">
+            <label>Intrest (Check all that apply):</label>
+
+          </div>
+          <input type="checkbox" id=" music" name="intrest" value="music">
+          <label for="music">Music</label>
+        </div>
+        <div>
+            <input type="checkbox" id="travel" name="intrest" value="travel">
+            <label for="travel">Travel</label>
+        </div>
+        <div>
+            <input type="checkbox" id="sport" name="intrest" value="sport">
+            <label for="sport">Sport</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Movies" name="intrest" value="movies">
+            <label for="movies">Movies</label>
+        </div>
+        <div>
+            <input type="checkbox" id="reading" id="intrest" value="reading">
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" id="shopping" name="intrest" value="shopping">
+            <label for="shopping">Shopping</label>
+        </div>
+
+        <!--Image Upload-->
+        <div class="form-group">
+            <label for="profile-pic">Upload a Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/">
+        </div>
+
+        <!--Brief Bio-->
+        <div class="form-group">
+            <label for="bio">Tell us a bit about ypourself</label>
+            <textarea id="bio" name="bio" placeholder="Write a brief bio..." rows="5" required></textarea>
+        </div>
+
+        <!--Submit Button-->
+        <div class="form-group">
+            <button type="submit">Sign Up</button>
+        </div>
+
+        <!--Lost Interest Button-->
+        <div class="form-group">
+            <button type="button" class="lost-intrest" onclick="alert('You have existed the signup process.')">Lost Intrest</button>
+        </div>
+         
+        </form>
+        <p class="footer-text"> We're thrilled to have you join our community!</p>
+    
+</body>
+</html> 
